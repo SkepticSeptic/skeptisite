@@ -181,32 +181,50 @@ body:has(#catppuccin-macchiato:checked) {
     --blue: var(--macchiato-blue);
     --lavender: var(--macchiato-lavender);
 }
-/* mocha */
+/* Cyberpunk 2077 - Neon Noir */
+/* okay yes i chatgpt'd the whole theme and the comments are cringe as hell sue me */
 body:has(#catppuccin-mocha:checked) {
-    --base: var(--mocha-base);
-    --mantle: var(--mocha-mantle);
-    --crust: var(--mocha-crust);
-    --overlay-0: var(--mocha-overlay-0);
-    --surface-0: var(--mocha-surface-0);
-    --surface-1: var(--mocha-surface-1);
-    --text: var(--mocha-text);
-    --subtext-0: var(--mocha-subtext-0);
-    --subtext-1: var(--mocha-subtext-1);
-    --rosewater: var(--mocha-rosewater);
-    --flamingo: var(--mocha-flamingo);
-    --pink: var(--mocha-pink);
-    --mauve: var(--mocha-mauve);
-    --red: var(--mocha-red);
-    --maroon: var(--mocha-maroon);
-    --peach: var(--mocha-peach);
-    --yellow: var(--mocha-yellow);
-    --green: var(--mocha-green);
-    --teal: var(--mocha-teal);
-    --sky: var(--mocha-sky);
-    --sapphire: var(--mocha-sapphire);
-    --blue: var(--mocha-blue);
-    --lavender: var(--mocha-lavender);
+    --base: #0a0a0a; /* Deep black, like the soul of Arasaka */
+    --mantle: #121212; /* Almost black, for that sleek modern look */
+    --crust: #1a1a1a; /* Dark steel, for contrast */
+    
+    --surface-0: #1e1e1e; /* Rough concrete */
+    --surface-1: #242424; /* Industrial steel */
+    --overlay-0: #2a2a2a; /* Cybernetic shadows */
+
+    --text: #d0d0d0; /* Pale gray, like neon reflected on wet asphalt */
+    --subtext-0: #bbbbbb; /* Dimmed HUD */
+    --subtext-1: #999999; /* Subtle, like hidden netrunner code */
+
+    /* Core colors – neon lights in the dark */
+    --red: #ff003c; /* Blood red, like a corpo hit job */
+    --maroon: #8b0000; /* Dark red, like dried blood */
+    --yellow: #ffcc00; /* Hazard tape, caution lights */
+    --green: #00ff99; /* Netrunner matrix glow */
+    --teal: #008f88; /* Cybernetic implants */
+    --blue: #0077ff; /* Electric blue, police sirens */
+    --sapphire: #0055aa; /* Midnight datajack cables */
+    --sky: #0099cc; /* Ice-cold neon */
+    --lavender: #8f5aff; /* Electric purple, like glitching neon */
+    --pink: #ff0077; /* The glow of illicit braindance dens */
+    --peach: #ff8844; /* Dusk light over Night City */
+    --flamingo: #ff3366; /* Street samurai flair */
+    --rosewater: #ff5577; /* Smudged lipstick on a merc's cigarette */
+
+    --accent: var(--red); /* Default: Red for blood and revolution */
+
+    /* Extra cyberpunk details */
+    --glow: rgba(255, 0, 60, 0.8); /* Red glow effect */
+    --glow-blue: rgba(0, 119, 255, 0.8); /* Blue glow effect */
+    --glow-green: rgba(0, 255, 153, 0.8); /* Green glow effect */
+
+    /* Cyberpunk-specific effects */
+    --rounding: 4px; /* Minimal softness, this ain't a kid's playground */
+    --hover-opacity: 30%; /* Sharper contrast when hovering */
+    --hover-animation-len: 0.2s; /* Fast, responsive UI—time is eddies */
+    --press-opacity: 70%; /* More aggressive press effect */
 }
+
 
 body:has(#accent-rosewater:checked) {
     --accent: var(--rosewater);
